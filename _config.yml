@@ -14,7 +14,7 @@ timezone: Europe/Warsaw
 future: false
 
 sass:
-    sass_dir: _scss
+    sass_dir: styles
     style: expanded
 
 exclude: [
