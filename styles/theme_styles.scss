@@ -1,5 +1,35 @@
 ---
 ---
 
-@import "../_scss/reset";
-@import "../_scss/variables";
+@import "_reset";
+@import "_variables";
+
+body {
+  font-family: $main_font;
+}
+
+.full_width {
+  width: 100%;
+
+}
+
+.top_bar {
+  background-color: $header_background_color;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  max-width: $MAX_WIDTH;
+  clear: both;
+}
+
+#logo {
+  font-family: $logo_font;
+  float: right;
+  .logo1 {
+    color: $logo-color_1;
+  }
+  .logo2 {
+    color: $logo-color_2;
+  }
+}
