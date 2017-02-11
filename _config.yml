@@ -1,20 +1,23 @@
 #site information
-name: gogo2
+title: gogo2
 description: gogo2 site
 author: Bartosz Sobol
 
 
-# site & jekyll configuration
 url: http://gogo2.github.io
 baseurl:
 
+lang: en
 encoding: utf-8
+
+
+# jekyll configuration
 timezone: Europe/Warsaw
 
 future: false
 
 sass:
-    sass_dir: _scss
+    sass_dir: styles
     style: expanded
 
 exclude: [
