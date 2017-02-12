@@ -1,0 +1,13 @@
+- heading: My projects
+  type: primary
+  items:
+    - title: console.color
+      url: https://github.com/gogo2/console.color
+    - title: gotl
+      url: https://github.com/gogo2/gotl
+
+- heading: Blogroll
+  type: default
+  items:
+    - title: Bartek's coding blog
+      url: http://www.bfilipek.com/
