@@ -1,12 +1,24 @@
 <div class="col-sm-4">
     {% for panel in site.data.sidebar_panels %}
     <div class="panel panel-{{panel.type}}">
-        <div class="panel-heading">{{panel.heading}}</div>
+        {% if panel.heading %}
+        <div class="panel-heading">
+            <h4 class="panel-title">{{panel.heading}}</h4>
+        </div>
+        {% endif %}
+        {% if panel.body %}
+        <div class="panel-body"> {{panel.body}}</div>
+        {% endif %}
         <ul class="list-group">
+            {% if panel.items %}
             {% for item in panel.items %}
             <li class="list-group-item"><a href="{{item.url}}">{{item.title}}</a></li>
             {% endfor %}
+            {% endif %}
         </ul>
+        {% if panel.footer %}
+        <div class="panel-footer">{{panel.footer}}</div>
+        {% endif %}
     </div>
     {% endfor %}
 

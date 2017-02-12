@@ -11,3 +11,11 @@
   items:
     - title: Bartek's coding blog
       url: http://www.bfilipek.com/
+
+- heading: Interesting projects
+  type: default
+  body: some interesting projects
+  footer: footer
+  items:
+    - title: Super Template Tetris
+      url: https://github.com/gogo2/Super-Template-Tetris
