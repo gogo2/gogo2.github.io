@@ -1,0 +1,15 @@
+<div class="col-sm-4">
+    {% for panel in site.data.sidebar_panels %}
+    <div class="panel panel-{{panel.type}}">
+        <div class="panel-heading">{{panel.heading}}</div>
+        <ul class="list-group">
+            {% for item in panel.items %}
+            <li class="list-group-item"><a href="{{item.url}}">{{item.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+
+
+</div>
+
