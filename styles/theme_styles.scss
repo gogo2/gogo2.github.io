@@ -6,6 +6,14 @@
 @import "theme_variables";
 @import "theme_bootstrap_overwrite";
 
+.home_portfolio_container {
+  background-color: #fafafa;
+  padding: 30px 15px 10px 15px;
+  margin-bottom: 25px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+}
 
 #logo {
   font-family: $logo_font;

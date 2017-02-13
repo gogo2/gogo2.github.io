@@ -1,0 +1,23 @@
+{% for project in site.data.projects %}
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+            {% if project.name %} <h3>{{project.name}}</h3> {% endif %}
+            {% if project.slug %} <p>{{project.slug}}</p> {% endif %}
+            <p>
+                {% if project.about_page %}
+                <a href="{{project.about_page}}" class="btn btn-primary" role="button">About</a>
+                {% endif %}
+
+                {% if project.github_url %}
+                <a href="{{project.github_url}}" class="btn btn-default" role="button">GitHub</a>
+                {% endif %}
+
+                {% if project.docs_page %}
+                <a href="{{project.docs_page}}" class="btn btn-info" role="button">Docs</a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
